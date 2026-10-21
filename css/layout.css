@@ -30,8 +30,8 @@ main.wide, main:has(.stage), main:has(.split) { max-width: 72rem; }
 /* Two coasts side by side: stacked on phones, columns from tablet up. */
 .split { display: grid; grid-template-columns: 1fr; gap: var(--space-3); }
 .split > * { min-width: 0; padding: var(--space-2); border-top: 6px solid currentColor; }
-.split > .istria { color: var(--color-istria); }
-.split > .islands { color: var(--color-islands); }
+.split > .istria { color: var(--color-istria); background: var(--color-istria-tint); }
+.split > .islands { color: var(--color-islands); background: var(--color-islands-tint); }
 .split > * > * { color: var(--color-text); }
 .split > * > :is(h2, h3) { color: inherit; }
 
