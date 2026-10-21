@@ -22,7 +22,7 @@
 
   // Styles for the effects below, injected so they exist only when motion is allowed.
   var css = [
-    '.kin-ready .char, .kin-ready .word { opacity: 0; transform: translateY(.6em); transition: opacity .6s ease, transform .6s cubic-bezier(.2,.8,.2,1); transition-delay: calc(var(--i) * 45ms); }',
+    '.kin-ready .char, .kin-ready .word { opacity: 0; transform: translateY(.6em); transition: opacity var(--dur-m, .6s) var(--ease-out, ease), transform var(--dur-m, .6s) var(--ease-out, ease); transition-delay: calc(var(--i) * 45ms); }',
     '.kin-ready.is-in .char, .kin-ready.is-in .word { opacity: 1; transform: none; }',
     '.kin-ready[data-kinetic="chars"] .char { display: inline-block; }',
     '.sw-word { opacity: .7; transition: opacity .25s ease; }',
