@@ -1,0 +1,15 @@
+/* Base look and shared text effects (owner: Lead Dev). */
+body { font-family: var(--font-body); background: var(--color-bg); color: var(--color-text); line-height: 1.6; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.1; }
+h1 { font-size: clamp(2.5rem, 9vw, 6rem); }
+a { color: var(--color-accent); }
+a:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+.brand { font-family: var(--font-display); font-weight: 700; text-decoration: none; }
+[aria-current="page"] { font-weight: 700; }
+/* Scroll reveal: app.js adds .is-visible. Content stays visible without JS. */
+.js .reveal { opacity: 0; transform: translateY(1.5rem); transition: opacity .8s ease, transform .8s ease; }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  * { animation: none !important; scroll-behavior: auto !important; }
+}

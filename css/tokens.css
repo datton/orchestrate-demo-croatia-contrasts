@@ -1,0 +1,15 @@
+/* Design tokens (owner: Designer). Typography only: system fonts, no images. */
+:root {
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --color-bg: #fbf8f2;
+  --color-text: #1c1c1c;
+  --color-istria: #4a5d23;
+  --color-islands: #0b5d7a;
+  --color-accent: #8a3b12;
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 2rem;
+  --space-4: 4rem;
+  --measure: 65ch;
+}
